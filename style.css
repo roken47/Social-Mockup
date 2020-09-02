@@ -1,64 +1,135 @@
 body {
+  display: grid;
   align-content: center;
-  display: flex;
+  /* justify-content: center; */
 }
 .banner {
   position: absolute;
-  background-color: midnightblue;
+  background-color: #00356b;
   height: 300px;
   width: 850px;
+  z-index: 0;
+  /* border: 5px solid black; */
 }
 #headshot {
+  background-size: contain;
   position: absolute;
   z-index: 2;
   left: 25px;
   top: 75px;
   width: 200px;
-  height: 250px;
-  border: 3px solid lightpink;
-  padding: 1px;
+  height: 225px;
+  border: 3px solid darkblue;
+  padding: 5px;
 }
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 42px;
   position: absolute;
-  top: 180px;
+  top: 144px;
   left: 500px;
+  /* border: 5px solid black; */
+}
+.profile a {
+  color: black;
+  text-decoration-line: none;
 }
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   position: absolute;
-  top: 240px;
+  top: 196px;
   left: 510px;
+  /* border: 5px solid black; */
 }
 .nav {
-  position: relative;
-  background-color: blueviolet;
-  height: 375px;
-  width: 850px;
-  /* z-index: -2; */
-}
-ul li {
   position: absolute;
-  text-decoration-color: white;
-  display: inline;
-  top: 600px;
-  left: 400px;
+  background-color: whitesmoke;
+  height: 100px;
+  width: 850px;
+  top: 250px;
+  z-index: -2;
+  /* border: 5px solid black; */
+}
+.nav::before {
+  content: "";
+  box-shadow: lightgray;
+}
+#menu {
+  position: absolute;
+  height: 20%;
+  width: 40%;
+  top: 32px;
+  left: 500px;
+  list-style-type: none;
+  display: inline-flex;
+  z-index: 999;
+  /* border: 5px solid black; */
+  margin: 3px 0;
+}
+a {
+  text-decoration-line: none;
+  font-size: medium;
+}
+.menu {
+  width: 20px;
+  height: 2.5px;
+  background-color: black;
+  margin: 3px 0;
+}
+#menu2 {
+  position: absolute;
+  height: 20%;
+  width: 40%;
+  top: 65px;
+  left: 210px;
+  list-style-type: none;
+  display: inline-flex;
   z-index: 6;
+  /* border: 5px solid black; */
+  margin: 3px 0;
+}
+button {
+}
+main {
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-row: span 2;
+  grid-column: span 1;
+  grid-gap: 10px;
 }
 .side-pane {
   background-color: violet;
   position: absolute;
-  width: 225px;
+  width: 328px;
   height: 400px;
   top: 410px;
+  /* border: 5px solid black; */
+  margin-right: 5px;
+}
+.about {
+}
+.contact {
+}
+.apps {
+}
+.photos {
 }
 .timeline {
   background-color: darkviolet;
   position: absolute;
-  width: 610px;
+  width: 512px;
   height: 400px;
   top: 410px;
-  left: 250px;
+  left: 342px;
+  /* border: 5px solid black; */
+  margin-left: 5px;
+}
+.post1 {
+}
+.post2 {
+}
+.post3 {
+}
+.post4 {
 }
